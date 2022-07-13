@@ -1,1 +1,5 @@
-로컬 브랜치에서 변경 내용 원격 브랜치에 반영하기
+변경한 내용을 로컬 브랜치에서 원격 브랜치로 반영하기
+ex)
+원하는 로컬 브랜치로 변경 = git checkout newlocalbranch
+새로운 변경 내용 스테이징 상태로 만들고 캡쳐하기 = git add -> git commit
+원격 브랜치에 반영 = git push origin newlocalbranch 

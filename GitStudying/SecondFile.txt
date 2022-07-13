@@ -3,3 +3,4 @@ ex)
 원하는 로컬 브랜치로 변경 = git checkout newlocalbranch
 새로운 변경 내용 스테이징 상태로 만들고 캡쳐하기 = git add -> git commit
 원격 브랜치에 반영 = git push origin newlocalbranch 
+원격 브랜치를 로컬 브랜치의 upstream 브랜치로 설정한다면 = git push origin

@@ -1,0 +1,14 @@
+로컬 저장소에서 브랜치를 생성하고 원격 저장소에 반영하기
+
+[1] 원하는 로컬 브랜치 생성 = git branch newlocalbranch
+[2] 현재 로컬 브랜치에서 해당 로컬 브랜치로 변경 = git checkout newlocalbranch
+[3] 로컬 저장소에서 변경한 내용을 (로컬-원격)특정 브랜치에 반영
+[3-1] git push origin newlocalbranch
+[3-2] 로컬 브랜치의 upstream을 원격 브랜치로 설정해서 = git push --set-upstream 원격저장소별명/원격저장소브랜치
+[3-2] 약간 편하게 반영 = git push origin
+
+각각의 브랜치에서 다른 부분을 변경한 후 main 브랜치로 PR 넣으면
+ex) newlocalbranch에서는 'SecondFile'을 변경, 커밋, 푸시, PR 넣고
+newremotebranch에서는 'ThirdFile'을 변경, 커밋, 푸시, PR 넣고
+= main 브랜치에 반영된 다른 브랜치의 변경 내용을 자기한테 업데이트 하고 자기 변경을 하느냐?
+업데이트 하지 않고 자기 변경을 하느냐? 에 따라 결과가 다르다고 생각한다

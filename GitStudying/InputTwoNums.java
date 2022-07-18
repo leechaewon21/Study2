@@ -1,6 +1,7 @@
 package modulization;
 
 import java.util.Scanner;
+import modulization.PlusFunction;
 
 import modulization.MinusFunction;
 
@@ -19,5 +20,9 @@ public class InputTwoNums {
 		
 		int diff = MinusFunction.minusTwoNums(num1,num2);
 		System.out.printf("Minus Two Nums : %d \n", diff);
+    
+		int sum = PlusFunction.plusTwoNums(num1,num2);
+		System.out.printf("Plus Two Nums : %d \n", sum);
+    
 	}
 }
